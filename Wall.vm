@@ -1,0 +1,1272 @@
+function Wall.new 0
+push constant 2
+call Memory.alloc 1
+pop pointer 0
+push argument 0
+pop this 0
+push constant 400
+call Array.new 1
+pop this 1
+push pointer 0
+call Wall.initWall 1
+pop temp 0
+push pointer 0
+call Wall.drawWall 1
+pop temp 0
+push pointer 0
+call Wall.setWall 1
+pop temp 0
+push pointer 0
+return
+function Wall.dispose 0
+push argument 0
+pop pointer 0
+push pointer 0
+call Memory.deAlloc 1
+pop temp 0
+push constant 0
+return
+function Wall.initWall 1
+push argument 0
+pop pointer 0
+push constant 0
+pop local 0
+label WHILE_EXP0
+push local 0
+push constant 400
+lt
+not
+if-goto WHILE_END0
+push local 0
+push this 1
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP0
+label WHILE_END0
+push constant 0
+return
+function Wall.drawWall 0
+push argument 0
+pop pointer 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 0
+push this 0
+push this 0
+push constant 7
+call Math.multiply 2
+push this 0
+push constant 2
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+push this 0
+push constant 2
+call Math.multiply 2
+push this 0
+push this 0
+push constant 20
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push this 0
+push constant 16
+call Math.multiply 2
+push this 0
+push constant 5
+call Math.multiply 2
+push this 0
+push constant 17
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push this 0
+push constant 3
+call Math.multiply 2
+push this 0
+push constant 2
+call Math.multiply 2
+push this 0
+push constant 4
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 6
+call Math.multiply 2
+push this 0
+push constant 16
+call Math.multiply 2
+push this 0
+push constant 10
+call Math.multiply 2
+push this 0
+push constant 17
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 11
+call Math.multiply 2
+push this 0
+push constant 16
+call Math.multiply 2
+push this 0
+push constant 13
+call Math.multiply 2
+push this 0
+push constant 17
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 2
+call Math.multiply 2
+push this 0
+push constant 5
+call Math.multiply 2
+push this 0
+push constant 3
+call Math.multiply 2
+push this 0
+push constant 13
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 2
+call Math.multiply 2
+push this 0
+push constant 14
+call Math.multiply 2
+push this 0
+push constant 13
+call Math.multiply 2
+push this 0
+push constant 15
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 2
+call Math.multiply 2
+push this 0
+push constant 18
+call Math.multiply 2
+push this 0
+push constant 12
+call Math.multiply 2
+push this 0
+push constant 19
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 3
+call Math.multiply 2
+push this 0
+push constant 3
+call Math.multiply 2
+push this 0
+push constant 8
+call Math.multiply 2
+push this 0
+push constant 4
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 3
+call Math.multiply 2
+push this 0
+push constant 5
+call Math.multiply 2
+push this 0
+push constant 7
+call Math.multiply 2
+push this 0
+push constant 6
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 8
+call Math.multiply 2
+push constant 0
+push this 0
+push constant 9
+call Math.multiply 2
+push this 0
+push constant 7
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 4
+call Math.multiply 2
+push this 0
+push constant 6
+call Math.multiply 2
+push this 0
+push constant 5
+call Math.multiply 2
+push this 0
+push constant 7
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 6
+call Math.multiply 2
+push this 0
+push constant 6
+call Math.multiply 2
+push this 0
+push constant 7
+call Math.multiply 2
+push this 0
+push constant 7
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 3
+call Math.multiply 2
+push this 0
+push constant 8
+call Math.multiply 2
+push this 0
+push constant 12
+call Math.multiply 2
+push this 0
+push constant 9
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 3
+call Math.multiply 2
+push this 0
+push constant 10
+call Math.multiply 2
+push this 0
+push constant 7
+call Math.multiply 2
+push this 0
+push constant 11
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 8
+call Math.multiply 2
+push this 0
+push constant 10
+call Math.multiply 2
+push this 0
+push constant 13
+call Math.multiply 2
+push this 0
+push constant 11
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 3
+call Math.multiply 2
+push this 0
+push constant 10
+call Math.multiply 2
+push this 0
+push constant 7
+call Math.multiply 2
+push this 0
+push constant 11
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 4
+call Math.multiply 2
+push this 0
+push constant 12
+call Math.multiply 2
+push this 0
+push constant 12
+call Math.multiply 2
+push this 0
+push constant 13
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 8
+call Math.multiply 2
+push constant 0
+push this 0
+push constant 9
+call Math.multiply 2
+push this 0
+push constant 7
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 10
+call Math.multiply 2
+push this 0
+push this 0
+push constant 11
+call Math.multiply 2
+push this 0
+push constant 7
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 12
+call Math.multiply 2
+push constant 0
+push this 0
+push constant 13
+call Math.multiply 2
+push this 0
+push constant 4
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 16
+call Math.multiply 2
+push constant 0
+push this 0
+push constant 17
+call Math.multiply 2
+push this 0
+push constant 2
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 14
+call Math.multiply 2
+push this 0
+push this 0
+push constant 15
+call Math.multiply 2
+push this 0
+push constant 4
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 11
+call Math.multiply 2
+push this 0
+push constant 6
+call Math.multiply 2
+push this 0
+push constant 12
+call Math.multiply 2
+push this 0
+push constant 7
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 18
+call Math.multiply 2
+push this 0
+push this 0
+push constant 19
+call Math.multiply 2
+push this 0
+push constant 3
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 15
+call Math.multiply 2
+push this 0
+push constant 3
+call Math.multiply 2
+push this 0
+push constant 20
+call Math.multiply 2
+push this 0
+push constant 4
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 12
+call Math.multiply 2
+push this 0
+push constant 5
+call Math.multiply 2
+push this 0
+push constant 19
+call Math.multiply 2
+push this 0
+push constant 6
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 13
+call Math.multiply 2
+push this 0
+push constant 7
+call Math.multiply 2
+push this 0
+push constant 14
+call Math.multiply 2
+push this 0
+push constant 20
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 15
+call Math.multiply 2
+push this 0
+push constant 7
+call Math.multiply 2
+push this 0
+push constant 20
+call Math.multiply 2
+push this 0
+push constant 8
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 15
+call Math.multiply 2
+push this 0
+push constant 8
+call Math.multiply 2
+push this 0
+push constant 16
+call Math.multiply 2
+push this 0
+push constant 16
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 15
+call Math.multiply 2
+push this 0
+push constant 17
+call Math.multiply 2
+push this 0
+push constant 16
+call Math.multiply 2
+push this 0
+push constant 20
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 16
+call Math.multiply 2
+push this 0
+push constant 9
+call Math.multiply 2
+push this 0
+push constant 19
+call Math.multiply 2
+push this 0
+push constant 10
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 17
+call Math.multiply 2
+push this 0
+push constant 11
+call Math.multiply 2
+push this 0
+push constant 18
+call Math.multiply 2
+push this 0
+push constant 17
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 16
+call Math.multiply 2
+push this 0
+push constant 18
+call Math.multiply 2
+push this 0
+push constant 19
+call Math.multiply 2
+push this 0
+push constant 19
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 18
+call Math.multiply 2
+push this 0
+push constant 11
+call Math.multiply 2
+push this 0
+push constant 19
+call Math.multiply 2
+push this 0
+push constant 12
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 19
+call Math.multiply 2
+push this 0
+push constant 13
+call Math.multiply 2
+push this 0
+push constant 20
+call Math.multiply 2
+push this 0
+push constant 14
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 18
+call Math.multiply 2
+push this 0
+push constant 15
+call Math.multiply 2
+push this 0
+push constant 19
+call Math.multiply 2
+push this 0
+push constant 17
+call Math.multiply 2
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Wall.setWall 1
+push argument 0
+pop pointer 0
+push constant 20
+pop local 0
+label WHILE_EXP0
+push local 0
+push constant 27
+lt
+not
+if-goto WHILE_END0
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP0
+label WHILE_END0
+push constant 40
+pop local 0
+label WHILE_EXP1
+push local 0
+push constant 400
+lt
+not
+if-goto WHILE_END1
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 20
+add
+pop local 0
+goto WHILE_EXP1
+label WHILE_END1
+push constant 63
+pop local 0
+label WHILE_EXP2
+push local 0
+push constant 68
+lt
+not
+if-goto WHILE_END2
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP2
+label WHILE_END2
+push constant 102
+pop local 0
+label WHILE_EXP3
+push local 0
+push constant 107
+lt
+not
+if-goto WHILE_END3
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP3
+label WHILE_END3
+push constant 122
+pop local 0
+label WHILE_EXP4
+push local 0
+push constant 243
+lt
+not
+if-goto WHILE_END4
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 20
+add
+pop local 0
+goto WHILE_EXP4
+label WHILE_END4
+push constant 282
+pop local 0
+label WHILE_EXP5
+push local 0
+push constant 293
+lt
+not
+if-goto WHILE_END5
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP5
+label WHILE_END5
+push constant 8
+pop local 0
+label WHILE_EXP6
+push local 0
+push constant 129
+lt
+not
+if-goto WHILE_END6
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 20
+add
+pop local 0
+goto WHILE_EXP6
+label WHILE_END6
+push constant 30
+pop local 0
+label WHILE_EXP7
+push local 0
+push constant 131
+lt
+not
+if-goto WHILE_END7
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 20
+add
+pop local 0
+goto WHILE_EXP7
+label WHILE_END7
+push constant 12
+pop local 0
+label WHILE_EXP8
+push local 0
+push constant 73
+lt
+not
+if-goto WHILE_END8
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 20
+add
+pop local 0
+goto WHILE_EXP8
+label WHILE_END8
+push constant 153
+pop local 0
+label WHILE_EXP9
+push local 0
+push constant 394
+lt
+not
+if-goto WHILE_END9
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 20
+add
+pop local 0
+goto WHILE_EXP9
+label WHILE_END9
+push constant 155
+pop local 0
+label WHILE_EXP10
+push local 0
+push constant 316
+lt
+not
+if-goto WHILE_END10
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 20
+add
+pop local 0
+goto WHILE_EXP10
+label WHILE_END10
+push constant 237
+pop local 0
+label WHILE_EXP11
+push local 0
+push constant 338
+lt
+not
+if-goto WHILE_END11
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 20
+add
+pop local 0
+goto WHILE_EXP11
+label WHILE_END11
+push constant 74
+pop local 0
+label WHILE_EXP12
+push local 0
+push constant 80
+lt
+not
+if-goto WHILE_END12
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP12
+label WHILE_END12
+push constant 112
+pop local 0
+label WHILE_EXP13
+push local 0
+push constant 119
+lt
+not
+if-goto WHILE_END13
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP13
+label WHILE_END13
+push constant 156
+pop local 0
+label WHILE_EXP14
+push local 0
+push constant 160
+lt
+not
+if-goto WHILE_END14
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP14
+label WHILE_END14
+push constant 375
+pop local 0
+label WHILE_EXP15
+push local 0
+push constant 379
+lt
+not
+if-goto WHILE_END15
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP15
+label WHILE_END15
+push constant 163
+pop local 0
+label WHILE_EXP16
+push local 0
+push constant 172
+lt
+not
+if-goto WHILE_END16
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP16
+label WHILE_END16
+push constant 203
+pop local 0
+label WHILE_EXP17
+push local 0
+push constant 207
+lt
+not
+if-goto WHILE_END17
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP17
+label WHILE_END17
+push constant 208
+pop local 0
+label WHILE_EXP18
+push local 0
+push constant 213
+lt
+not
+if-goto WHILE_END18
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP18
+label WHILE_END18
+push constant 244
+pop local 0
+label WHILE_EXP19
+push local 0
+push constant 252
+lt
+not
+if-goto WHILE_END19
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP19
+label WHILE_END19
+push constant 321
+pop local 0
+label WHILE_EXP20
+push local 0
+push constant 325
+lt
+not
+if-goto WHILE_END20
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP20
+label WHILE_END20
+push constant 326
+pop local 0
+label WHILE_EXP21
+push local 0
+push constant 330
+lt
+not
+if-goto WHILE_END21
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP21
+label WHILE_END21
+push constant 362
+pop local 0
+label WHILE_EXP22
+push local 0
+push constant 371
+lt
+not
+if-goto WHILE_END22
+push local 0
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP22
+label WHILE_END22
+push constant 61
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 124
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 126
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 16
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 36
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 131
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 34
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 54
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 38
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 58
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 279
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 238
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 318
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 338
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 331
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 332
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 355
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 395
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 196
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 197
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 198
+push this 1
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+return
+function Wall.isWall 2
+push argument 0
+pop pointer 0
+push constant 0
+pop local 1
+push argument 1
+push this 1
+add
+pop pointer 1
+push that 0
+pop local 0
+push local 0
+push constant 1
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+not
+pop local 1
+label IF_FALSE0
+push local 1
+return

@@ -1,0 +1,256 @@
+
+class Wall {
+
+   field int size;
+   field Array wall;
+   
+   constructor Wall new(int Asize) {
+      let size = Asize;
+      let wall = Array.new(400);
+      
+      do initWall();
+      do drawWall();
+      do setWall();
+      return this;
+   }
+
+   /** Disposes this Wall. */
+   method void dispose() {
+      do Memory.deAlloc(this);
+      return;
+   }
+   
+    method void initWall() {
+      var int walker;
+      let walker = 0;
+      while (walker < 400) {
+        let wall[walker] = 0;
+        let walker = walker + 1;
+        }
+      return;
+   }
+   
+   
+    method void drawWall() {
+      do Screen.setColor(true);
+      do Screen.drawRectangle(0, size , size * 7, size * 2);
+      do Screen.drawRectangle(0, size * 2 , size, size * 20);
+      do Screen.drawRectangle(size, size * 16 , size * 5, size * 17);
+      do Screen.drawRectangle(size, size * 3 , size * 2, size * 4);
+      do Screen.drawRectangle(size * 6, size * 16 , size * 10, size * 17);
+      do Screen.drawRectangle(size * 11, size * 16 , size * 13, size * 17);
+      do Screen.drawRectangle(size * 2, size * 5 , size * 3, size * 13);
+      do Screen.drawRectangle(size * 2, size * 14 , size * 13, size * 15);
+      do Screen.drawRectangle(size * 2, size * 18 , size * 12, size * 19);
+      do Screen.drawRectangle(size * 3, size * 3 , size * 8, size * 4);
+      do Screen.drawRectangle(size * 3, size * 5 , size * 7, size * 6);
+      do Screen.drawRectangle(size * 8, 0, size * 9, size * 7);
+      do Screen.drawRectangle(size * 4, size * 6, size * 5, size * 7);
+      do Screen.drawRectangle(size * 6, size * 6, size * 7, size * 7);
+      do Screen.drawRectangle(size * 3, size * 8, size * 12, size * 9);
+      do Screen.drawRectangle(size * 3, size * 10, size * 7, size * 11);
+      do Screen.drawRectangle(size * 8, size * 10, size * 13, size * 11);
+      do Screen.drawRectangle(size * 3, size * 10, size * 7, size * 11);
+      do Screen.drawRectangle(size * 4, size * 12, size * 12, size * 13);
+      do Screen.drawRectangle(size * 8, 0, size * 9, size * 7);
+      do Screen.drawRectangle(size * 10, size, size * 11, size * 7);
+      do Screen.drawRectangle(size * 12, 0, size * 13, size * 4);
+      do Screen.drawRectangle(size * 16, 0, size * 17, size * 2);
+      do Screen.drawRectangle(size * 14, size, size * 15, size * 4);
+      do Screen.drawRectangle(size * 11, size * 6, size * 12, size * 7);
+      do Screen.drawRectangle(size * 18, size, size * 19, size * 3);
+      do Screen.drawRectangle(size * 15, size * 3, size * 20, size * 4);
+      do Screen.drawRectangle(size * 12, size * 5, size * 19, size * 6);
+      do Screen.drawRectangle(size * 13, size * 7, size * 14, size * 20);
+      do Screen.drawRectangle(size * 15, size * 7, size * 20, size * 8);
+      do Screen.drawRectangle(size * 15, size * 8, size * 16, size * 16);
+      do Screen.drawRectangle(size * 15, size * 17, size * 16, size * 20);
+      do Screen.drawRectangle(size * 16, size * 9, size * 19, size * 10);
+      do Screen.drawRectangle(size * 17, size * 11, size * 18, size * 17);
+      do Screen.drawRectangle(size * 16, size * 18, size * 19, size * 19);
+      do Screen.drawRectangle(size * 18, size * 11, size * 19, size * 12);
+      do Screen.drawRectangle(size * 19, size * 13, size * 20, size * 14);
+      do Screen.drawRectangle(size * 18, size * 15, size * 19, size * 17);
+      return;
+   }
+   
+    method void setWall() {
+      var int walker;
+      let walker = 20;
+      while (walker < 27) {
+        let wall[walker] = 1;
+        let walker = walker + 1;
+        }
+
+      let walker = 40;
+      while (walker < 400) {
+        let wall[walker] = 1;
+        let walker = walker + 20;
+        }
+        
+      let walker = 63;
+      while (walker < 68) {
+        let wall[walker] = 1;
+        let walker = walker + 1;
+        }
+        
+      let walker = 102;
+      while (walker < 107) {
+        let wall[walker] = 1;
+        let walker = walker + 1;
+        }
+
+      let walker = 122;
+      while (walker < 243) {
+        let wall[walker] = 1;
+        let walker = walker + 20;
+        }
+
+      let walker = 282;
+      while (walker < 293) {
+        let wall[walker] = 1;
+        let walker = walker + 1;
+        }
+        
+      let walker = 8;
+      while (walker < 129) {
+        let wall[walker] = 1;
+        let walker = walker + 20;
+        }
+        
+      let walker = 30;
+      while (walker < 131) {
+        let wall[walker] = 1;
+        let walker = walker + 20;
+        }
+        
+      let walker = 12;
+      while (walker < 73) {
+        let wall[walker] = 1;
+        let walker = walker + 20;
+        }
+        
+      let walker = 153;
+      while (walker < 394) {
+        let wall[walker] = 1;
+        let walker = walker + 20;
+        }
+        
+      let walker = 155;
+      while (walker < 316) {
+        let wall[walker] = 1;
+        let walker = walker + 20;
+        }
+        
+      let walker = 237;
+      while (walker < 338) {
+        let wall[walker] = 1;
+        let walker = walker + 20;
+        }
+        
+      let walker = 74;
+      while (walker < 80) {
+        let wall[walker] = 1;
+        let walker = walker + 1;
+        }
+
+      let walker = 112;
+      while (walker < 119) {
+        let wall[walker] = 1;
+        let walker = walker + 1;
+        }
+        
+      let walker = 156;
+      while (walker < 160) {
+        let wall[walker] = 1;
+        let walker = walker + 1;
+        }
+        
+      let walker = 375;
+      while (walker < 379) {
+        let wall[walker] = 1;
+        let walker = walker + 1;
+        }
+
+      let walker = 163;
+      while (walker < 172) {
+        let wall[walker] = 1;
+        let walker = walker + 1;
+        }
+        
+      let walker = 203;
+      while (walker < 207) {
+        let wall[walker] = 1;
+        let walker = walker + 1;
+        }
+        
+      let walker = 208;
+      while (walker < 213) {
+        let wall[walker] = 1;
+        let walker = walker + 1;
+        }
+        
+      let walker = 244;
+      while (walker < 252) {
+        let wall[walker] = 1;
+        let walker = walker + 1;
+        }
+        
+      let walker = 321;
+      while (walker < 325) {
+        let wall[walker] = 1;
+        let walker = walker + 1;
+        }
+        
+      let walker = 326;
+      while (walker < 330) {
+        let wall[walker] = 1;
+        let walker = walker + 1;
+        }
+        
+      let walker = 362;
+      while (walker < 371) {
+        let wall[walker] = 1;
+        let walker = walker + 1;
+        }
+        
+      let wall[61] = 1;
+      let wall[124] = 1;
+      let wall[126] = 1;
+      let wall[16] = 1;
+      let wall[36] = 1;
+      let wall[131] = 1;
+      let wall[34] = 1;
+      let wall[54] = 1;
+      let wall[38] = 1;
+      let wall[58] = 1;
+      
+      let wall[279] = 1;
+      let wall[238] = 1;
+      let wall[318] = 1;
+      let wall[338] = 1;
+      let wall[331] = 1;
+      let wall[332] = 1;
+      let wall[355] = 1;
+      let wall[395] = 1;
+      let wall[196] = 1;
+      let wall[197] = 1;
+      let wall[198] = 1;
+
+
+      return;
+        
+    }
+   
+    method boolean isWall(int position) {
+      var int temp;
+      var boolean is_wall;
+      let is_wall = false;
+      let temp = wall[position];
+      if (temp = 1) {
+        let is_wall = true;
+      }
+      
+      return is_wall;
+   }
+}
